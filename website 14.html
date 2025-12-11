@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA: Certified Governance Infrastructure</title>
+    <style>
+        /* --- General Styling & Dark Theme --- */
+        :root {
+            --color-dark-blue: #0d1117; 
+            --color-medium-blue: #161b22;
+            --color-aura-glow: #58a6ff;
+            --color-text-light: #c9d1d9;
+            --color-text-subtle: #8b949e;
+            --color-accent-border: #30363d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-dark-blue); 
+            color: var(--color-text-light); 
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px; 
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h2, h3 { 
+            color: var(--color-aura-glow); 
+            border-bottom: 1px solid var(--color-accent-border); 
+            padding-bottom: 5px;
+            margin-top: 50px; 
+        }
+        
+        /* --- PROFESSIONAL TEXT STRIP HEADER (FIXED LOGO & CENTERED TEXT) --- */
+        header {
+            width: 100%;
+            height: 150px; /* FIXED HEIGHT */
+            background-color: #000;
+            display: flex;
+            justify-content: flex-start; /* Start logo on the left */
+            align-items: center;
+            overflow: hidden;
+            border-bottom: 2px solid var(--color-aura-glow);
+            padding: 0 20px; /* Padding on the sides */
+            box-sizing: border-box;
+        }
+        
+        header .logo {
+            height: 80px; /* Size of the logo */
+            width: auto;
+            margin-right: 20px;
+            object-fit: contain;
+        }
+        
+        header .header-text {
+            /* CRITICAL FIX: Grow to fill remaining space and center internal text */
+            flex-grow: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Center items vertically within its space */
+            text-align: center; /* Center the text horizontally */
+        }
+        
+        header h1 {
+            color: var(--color-aura-glow);
+            font-size: 2.2em;
+            margin: 0;
+            padding: 0;
+        }
+        header p {
+            color: var(--color-text-light);
+            font-size: 1.0em;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Content Layout (High-Deference Two-Column) --- */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .section-title {
+            grid-column: 1 / -1; 
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card {
+            background-color: var(--color-medium-blue);
+            padding: 30px;
+            border-radius: 4px; 
+            border-left: 5px solid var(--color-aura-glow); 
+            height: auto; 
+        }
+
+        /* --- Team Section --- */
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: var(--color-medium-blue);
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid var(--color-accent-border);
+        }
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            border: 3px solid var(--color-aura-glow);
+        }
+        .team-info h3 {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        .team-info p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            color: var(--color-text-subtle);
+        }
+        
+        /* --- Footer (Professional Contact Focus) --- */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--color-text-subtle);
+            font-size: 0.9em;
+            border-top: 1px solid var(--color-accent-border);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header role="banner">
+        <img src="auralogo.jpg" alt="AURA Logo" class="logo">
+        
+        <div class="header-text">
+            <h1>AURA: Certified Assurance Layer</h1>
+            <p>The RegTech Infrastructure for L4 Autonomy Deployment (Sea to Space).</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="problem-solution">
+            <h2 class="section-title">The Existential Bottleneck: Liability vs. Autonomy Scale</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>The $400B Crisis</h3>
+                    <p>The multi-domain L4 autonomy market cannot scale past pilot programs because the legal and regulatory framework for accountability is broken. This liability crisis prevents the issuance of cATO (Continued Authority to Operate) and blocks billions in defense spending.</p>
+                </div>
+                <div class="card">
+                    <h3>The Core Solution: OAL RegTech</h3>
+                    <p>AURA’s Operational Assurance Layer (OAL) is the mandatory governance SaaS that transforms the liability bottleneck into a legally verifiable process. We provide the certified audit-readiness required for high-stakes autonomous deployment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology">
+            <h2 class="section-title">The Technology Moat: Certified Assurance for Dual-Use Systems</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Patent-Pending TDNN Architecture</h3>
+                    <p>Our Temporal Data Neural Network (TDNN) is a fusion architecture that mathematically certifies the integrity of autonomous and human-in-the-loop decisions. This core IP is the technical foundation of verifiable machine intent.</p>
+                </div>
+                <div class="card">
+                    <h3>The HMSR: Non-Repudiable Audit</h3>
+                    <p>The TDNN generates the Human-Machine State Record (HMSR)—a cryptographically secure audit trail. This record conclusively satisfies military accountability (ROE/UCMJ) and federal regulatory demands for liability.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="team">
+            <h2 class="section-title">Leadership & Strategic Advisors</h2>
+            <div class="grid-2">
+                <div class="team-member">
+                    <img src="founder.jpg" alt="Founder Photo">
+                    <div class="team-info">
+                        <h3>Matthew Ramsey</h3>
+                        <p>Founder & CEO</p>
+                        <small>Deep Tech, AI Architecture, Defense Sector Expert.</small>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <img src="Philip Abraham.jpg" alt="Phil Abraham Photo">
+                    <div class="team-info">
+                        <h3>Phil Abraham</h3>
+                        <p>Strategic Advisor</p>
+                        <small>Chief Innovation/Strategy Officer, Complexity Scientist.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="next-steps" style="text-align: center;">
+            <h2 style="border: none;">Next Steps & Due Diligence</h2>
+            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 30px;">
+                AURA is actively seeking a Technical Point of Contact (TPOC) for our AFWERX D2P2 application and closing our Seed round. We require alignment with partners serious about foundational defense infrastructure.
+            </p>
+            <p style="font-size: 1.1em; font-weight: bold; color: var(--color-aura-glow);">
+                Contact the Founder directly for access to the Pitch Deck:
+                <a href="mailto:auragovernance@gmail.com" style="color: var(--color-aura-glow); text-decoration: none; margin-left: 10px;">auragovernance@gmail.com</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 AURA. All Rights Reserved. | Strategic Inquiries: <a href="mailto:auragovernance@gmail.com" style="color: var(--color-text-subtle); text-decoration: none;">auragovernance@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
